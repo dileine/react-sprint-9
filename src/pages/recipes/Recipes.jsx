@@ -1,14 +1,12 @@
 import React, {useEffect} from "react";
 import { publish } from "../../app/utils/customEvents";
 import { Container } from "../../styles/Container"
+import RecipeList from "../../components/recipeList/RecipeList";
 
 const Recipes = ()=>{
     useEffect(()=> publish("recipesClick"), []);
     return(<Container>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-    Minima, quibusdam deserunt quo molestiae vitae iusto 
-    dolorum nemo dolores rem voluptatibus, harum modi vero. 
-    Non eaque qui labore nostrum dolorum soluta.</p>
+        <RecipeList/>
     </Container>)
 }
 
