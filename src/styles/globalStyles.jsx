@@ -13,6 +13,10 @@ body {
 h1, h2, h3 { 
     color: ${({ theme }) => theme.colors.primary};
     }
+
+link {
+    text-decoration: none;
+    }
   
 button {
     width: 8rem;
