@@ -1,6 +1,7 @@
   import React from "react";
   import useApiData from "../../app/hooks/useApiData";
   import SearchForm from "../searchForm/SearchForm";
+  import RecipeCard from "../recipeCard/RecipeCard";
 
   const RecipeList = () => {
      
@@ -31,14 +32,11 @@
         ) : error ? (
           <p>{error}</p>
         ) : (
-          <ul>
-            {recipeData.map((recipe, id) => (
-              <li key={id}>
-                <h3>{recipe.title}</h3>
-                <img src={recipe.image} alt={recipe.title} />
-              </li>
-            ))}
-          </ul>
+          <div>
+          {recipeData.map((recipe) => (
+            <RecipeCard key={recipe.id} recipe={recipe} />
+          ))}
+        </div>
         )}
       </div>)
   }

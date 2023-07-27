@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { fetchRecipeById, searchByName, searchByIngredient } from "../utils/api";
+import { fetchRecipeById, searchByName, searchByIngredient } from "../services/api";
 
 function useApiData() {
   const [recipeData, setRecipeData] = useState([]);
