@@ -8,14 +8,14 @@ import NavBar from "../src/components/navBar/NavBar";
 function App() {
   return (
     <ThemeProvider theme={THEME}>
-      <GlobalStyles/>
-        <header>
-          <Header />
-          <NavBar />
-        </header>
-        <main>
-          <Router />
-        </main>
+      <GlobalStyles />
+      <header>
+        <Header />
+        <NavBar />
+      </header>
+      <main>
+        <Router />
+      </main>
     </ThemeProvider>
   );
 }

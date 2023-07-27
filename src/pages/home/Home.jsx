@@ -31,8 +31,9 @@ const Home = () => {
             Cooking has never been more enjoyable, so let's get started on this delightful culinary adventure together. 
           </p>
           </WelcomeText>
-          <NavLink to="/Recipes"> 
-            <button >Let's cook!</button>
+          <h2>Let's cook!</h2>
+          <NavLink to="/Auth"> 
+            <button >Log in / Sign Up</button>
             </NavLink>
             </Container>)
 }
